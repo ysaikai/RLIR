@@ -1,3 +1,3 @@
-# Deep reinforcement learning for precision irrigation using high-dimensional sensor feedback
+# Deep reinforcement learning for irrigation scheduling using high-dimensional sensor feedback
 
-All the code and APSIM files are to be posted here.
+All the code, data, and APSIM files are to be posted here.
