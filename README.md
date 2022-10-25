@@ -12,3 +12,5 @@ Deep reinforcement learning has considerable potential to improve irrigation sch
 
 ![](probabilities.png)
 ![](probabilities2.png)
+
+(Dots (•) and triangles (▼) represent daily rainfall and realised irrigation amounts respectively.)
