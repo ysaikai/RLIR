@@ -2,7 +2,12 @@
 
 by [Yuji Saikai](https://yujisaikai.com), Allan Peake, and [Karine Chenu](https://researchers.uq.edu.au/researcher/1740)
 
-A preprint is on [arXiv](https://arxiv.org/abs/2301.00899). To capture a crop yield directly in the code, rather than from the output file (which is slow), the following lines were inserted in [L.228](https://github.com/APSIMInitiative/ApsimX/blob/4b7f31d2df86b0222ba9b796bf0ede40fa25a0c9/Models/Report/Report.cs#LL227C28-L227C28) in `Models/Report/Report.cs`.
+A preprint is on [arXiv](https://arxiv.org/abs/2301.00899). `wheat.apsimx` contains both
+
+- a custom management `IrrigationPolicy` to implement the decision rule based on the neural network and
+- an APSIM built-in `AutomaticIrrigation` configured to implement the benchmark replenishment rule.
+
+To capture a crop yield directly in the code, rather than from the output file (which is slower), the following lines were inserted in [L.228](https://github.com/APSIMInitiative/ApsimX/blob/4b7f31d2df86b0222ba9b796bf0ede40fa25a0c9/Models/Report/Report.cs#LL227C28-L227C28) in `Models/Report/Report.cs`.
 
 `if (columns[i].Name == "Yield")`<br />
 `    Program.yield = (float)Convert.ToDouble(valuesToWrite.Last());`
